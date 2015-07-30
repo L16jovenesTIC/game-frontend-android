@@ -31,13 +31,14 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccessFromFileURLs(true);
         webSettings.setAllowUniversalAccessFromFileURLs(true);
-        mWebView.setWebContentsDebuggingEnabled(true);
+        webSettings.setDomStorageEnabled(true);
+        // mWebView.setWebContentsDebuggingEnabled(true);
         // Url que carga la app (webview)
         mWebView.loadUrl("file:///android_asset/index.html");
         // Forzamos el webview para que abra los enlaces internos dentro de la la APP
         mWebView.setWebViewClient(new WebViewClient());
         // Forzamos el webview para que abra los enlaces externos en el navegador
-        // mWebView.setWebViewClient(new MyAppWebViewClient());
+        mWebView.setWebViewClient(new MyAppWebViewClient());
         // FIN AGREGADO
     }
 

@@ -12,7 +12,7 @@ public class MyAppWebViewClient extends WebViewClient {
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
         // Url base de la APP (al salir de esta url, abre el navegador) poner como se muestra, sin http://
-        if(Uri.parse(url).getHost().endsWith("google.com.co")) {
+        if(Uri.parse(url).getHost().endsWith("android_asset")) {
             return false;
         }
 
