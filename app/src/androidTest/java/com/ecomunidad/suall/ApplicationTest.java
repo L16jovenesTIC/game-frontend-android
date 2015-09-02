@@ -1,4 +1,4 @@
-package com.example.larsul.webappv1;
+package com.ecomunidad.suall;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
